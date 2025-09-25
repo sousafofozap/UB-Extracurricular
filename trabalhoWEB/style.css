@@ -1,0 +1,604 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+/* CSS LOGIN PAGE*/
+
+.contentLogin {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contentLogin span {
+  font-size: 27px;
+  font-weight: 600;
+  margin-top: 20px;
+  color: #900008;
+}
+.imgLogo {
+  width: 250px;
+}
+
+.textLogin {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.loginContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.login {
+  flex: 1;
+  height: 38px;
+  width: 248px;
+  border: 1px solid #ccc;
+  border-left: none;
+  border-radius: 0 5px 5px 0;
+  padding-left: 10px;
+  font-size: 14px;
+}
+.inputBox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2px;
+}
+
+.iconeLogin {
+  background-color: #900008;
+  height: 20px;
+  align-items: center;
+  justify-content: center;
+  border: #900008 solid;
+  border-width: 10px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.acessar {
+  width: 300px;
+  height: 40px;
+  background-color: #900008;
+  border-style: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: white;
+}
+.acessar:hover {
+  background-color: lightgray;
+}
+
+.botaoG {
+  width: 300px;
+  display: flex;
+  margin-top: 10px;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.botaoG:hover {
+  background-color: lightgray;
+}
+.iconeG {
+  height: 20px;
+}
+
+.linhaOu {
+  width: 300px;
+  margin: 10px auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.linhaOu hr {
+  flex: 1;
+  border: none;
+  border-top: 1px solid lightgray;
+}
+.esqueciS {
+  margin-top: 10px;
+  text-decoration: none;
+  color: #900008;
+  font-weight: 700;
+}
+.esqueciS:hover {
+  color: #580004;
+}
+
+/* CSS PAGES */
+
+.infoSuperiores {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  padding: 10px;
+  color: #776f6a;
+  font-size: 13px;
+}
+
+.infoSuperiores .ub {
+  justify-self: start;
+  text-align: left;
+  color: #0693cc;
+}
+
+.infoSuperiores .curso-info {
+  justify-self: center;
+  text-align: center;
+}
+
+.infoSuperiores .nomeRA {
+  justify-self: end;
+  text-align: right;
+}
+.cabecalho {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  padding: 10px 20px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #900008;
+  border-bottom: 1px solid #ddd;
+}
+
+.logoUB {
+  display: block;
+  align-items: center;
+}
+.logoUB img {
+  width: 200px;
+  display: block;
+}
+.titulo-cabecalho {
+  margin: 0;
+  font-size: 1.5em;
+  color: white;
+}
+.menu {
+  justify-self: end;
+}
+
+.menu ul {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li a {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.menu li a:hover {
+  background-color: #f0f0f0;
+  color: #900008;
+}
+
+html {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+main {
+  flex: 1;
+}
+
+footer {
+  background-color: #f8f8f8;
+  border-top: 1px solid #ddd;
+  color: #776f6a;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+/* CSS INDEX PAGE */
+
+.boas-vindas {
+  background-color: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 24px;
+  margin: 24px 0;
+}
+
+.boas-vindas h2 {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 1.8em;
+  color: #333;
+}
+
+.boas-vindas p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #555;
+  margin: 0 0 10px 0;
+}
+
+.boas-vindas strong {
+  color: #0056b3;
+  font-weight: 600;
+}
+
+.atividades {
+  margin: 24px 0;
+}
+
+.atividades h2 {
+  margin-left: 20px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.filtroAtividades ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.filtroAtividades li a {
+  display: block;
+  padding: 12px 18px;
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+  border-bottom: 3px solid transparent;
+  margin-bottom: -1px;
+}
+
+.filtroAtividades li.ativo a {
+  color: #0056b3;
+  border-bottom-color: #0056b3;
+}
+
+.atividades article {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.atividades article h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 1.2em;
+  color: #0056b3;
+}
+.atividades article h3 a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.atividades article p {
+  margin-bottom: 0;
+  line-height: 1.5;
+  color: #666;
+}
+
+.btn-ver-mais {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 8px 16px;
+  background-color: #900008;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 5px;
+  transition: background-color 0.2s ease;
+}
+
+.btn-ver-mais:hover {
+  background-color: #c9302c;
+}
+
+/* CSS ATIVIDADES PAGE */
+
+main .titulo-atividade {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 24px;
+}
+
+main .titulo-atividade header {
+  grid-column: 1 / -1;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+main .titulo-atividade header h2 {
+  margin: 0;
+  font-size: 2.2em;
+  color: #333;
+}
+
+main .titulo-atividade figure {
+  margin: 0;
+}
+
+main .titulo-atividade figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+}
+
+main .titulo-atividade figure figcaption {
+  margin-top: 8px;
+  font-size: 0.9em;
+  color: #888;
+  text-align: center;
+}
+
+main .titulo-atividade .detalhes h3 {
+  margin-top: 0;
+  font-size: 1.5em;
+  color: #444;
+}
+
+main .titulo-atividade .detalhes p {
+  font-size: 1.1em;
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 12px;
+}
+
+main .titulo-atividade .detalhes p strong {
+  color: #333;
+  min-width: 120px;
+  display: inline-block;
+}
+
+.form-inscrever {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.form-inscrever button {
+  display: inline-block;
+  background-color: #900008;
+  color: #fff;
+  padding: 14px 28px;
+  font-size: 1.1em;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.form-inscrever button:hover {
+  background-color: #c9302c;
+}
+
+/* CSS QR CODE PAGE */
+
+.main-qrcode {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 24px;
+  align-items: start;
+}
+
+.selecionar-atividade {
+  background-color: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 24px;
+}
+
+.selecionar-atividade h2 {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.selecionar-atividade form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+.selecionar-atividade form select {
+  width: 100%;
+  padding: 12px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 24px;
+}
+
+.selecionar-atividade form button {
+  padding: 14px;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #fff;
+  background-color: #900008;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.selecionar-atividade form button:hover {
+  background-color: #c9302c;
+}
+
+.qrcode {
+  text-align: center;
+}
+
+.qrcode h2 {
+  font-size: 1.5em;
+  color: #333;
+}
+
+.qrcode figure {
+  margin: 20px 0;
+  padding: 15px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.qrcode figure img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.qrcode figcaption {
+  margin-top: 10px;
+  font-size: 0.9em;
+  color: #888;
+}
+
+.qrcode .acoes {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.qrcode .acoes button {
+  width: 100%;
+  padding: 14px;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #333;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.qrcode .acoes button:hover {
+  background-color: #e0e0e0;
+}
+
+/* CSS PERFIL PAGE */
+
+.perfil-container {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 24px;
+  background-color: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+}
+
+.perfil-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+}
+
+.perfil-header h2 {
+  display: none;
+}
+
+.perfil-foto img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.perfil-info h3 {
+  margin-top: 0;
+  margin-bottom: 4px;
+  font-size: 2em;
+  color: #333;
+}
+
+.perfil-info .perfil-curso {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 1.2em;
+  color: #666;
+}
+
+.perfil-info .info-adicional p {
+  font-size: 1.1em;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.perfil-info .info-adicional p strong {
+  display: inline-block;
+  min-width: 150px;
+}
+
+.perfil-acoes {
+  text-align: right;
+}
+
+.perfil-acoes button {
+  background-color: #900008;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1em;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.perfil-acoes button:hover {
+  background-color: #c9302c;
+}

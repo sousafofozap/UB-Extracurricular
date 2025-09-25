@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>QR CODE - Atividades Extracurriculares</title>
+</head>
+<body>
+
+
+<header>
+<section class="infoSuperiores">
+    <div class="ub">
+        <p>UNIBALSAS EDUCACIONAL LTDA</p>
+    </div>
+
+    <div class="curso-info">
+        <p>Nome do Curso</p>
+    </div>
+
+    <div class="nomeRA">
+        <p>NOME ALUNO RA</p>
+    </div>
+</section>
+
+  <section class="cabecalho">
+    
+    <div class="logoUB">
+        <a href="index.html">
+            <img src="ub.png" alt="Logo da UniBalsas - Página Inicial">
+        </a>
+    </div>
+
+    <h2 class="titulo-cabecalho">ExtraCurricular</h2>
+
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="qrCode.html">QR Code</a></li>  
+            <li><a href="perfil.html">Perfil</a></li>
+            <li><a href="login.html">Sair</a></li>
+        </ul>
+    </nav>
+  </section>
+</header>
+
+<main class="main-qrcode">
+
+  <section class="selecionar-atividade">
+      <h2 id="selecionar-atividade">Selecione a Atividade</h2>
+
+      <form>
+        <label for="atividade">Atividade:</label>
+        <select id="atividade" name="atividade">
+          <option value="">-- Escolha uma atividade --</option>
+          <option value="1">Workshop de Inovação - 20/09/2025</option>
+          <option value="2">Palestra de Empreendedorismo - 25/09/2025</option>
+          <option value="3">Oficina de Programação - 30/09/2025</option>
+        </select>
+
+        <button type="submit">Gerar QR Code</button>
+      </form>
+    </section>
+
+
+    <section class="qrcode">
+      <h2 id="qrcode">QR Code da Atividade</h2>
+
+      <figure>
+        <img src="qrcode-exemplo.png" alt="QR Code da atividade selecionada">
+        <figcaption>Use o QR Code para validar sua presença na atividade.</figcaption>
+      </figure>
+
+      <div class="acoes">
+        <button type="button">Baixar QR Code</button>
+        <button type="button">Imprimir</button>
+      </div>
+    </section>
+  </main>
+
+    <footer>
+        <p>&copy; 2025 UniBalsas - Sistema de Atividades Extracurriculares</p>
+    </footer>
+
+</body>
+
+</html>
+

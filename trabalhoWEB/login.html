@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>UB - ExtraCurricular</title>
+</head>
+<body>
+    <main class="contentLogin">
+        <img src="img/logoUB.png" class="imgLogo">
+        <span>UB - ExtraCurricular</span>
+        <p class="textLogin">Login</p>
+
+        <div class="loginContainer">
+        <form onsubmit="acessar(); return false;">
+            <div class="inputBox">
+                <img src="img/do-utilizador.png" class="iconeLogin">
+                <input type="email" placeholder="Usuário" class="login" required>
+            </div>
+
+            <div class="inputBox">
+                <img src="img/cadeado.png" class="iconeLogin">
+                <input type="password" placeholder="Senha" class="login" required>
+            </div>
+
+                <input type="submit" class="acessar" value="Acessar">
+        </form>
+        </div>
+
+        <div class="linhaOu">
+            <hr>
+            <p>ou</p>
+            <hr>
+        </div>
+
+        <button class="botaoG">
+        <img src="img/google.png" class="iconeG">
+        Continuar com Google
+        </button>
+
+        <a href="perfil.html" class="esqueciS">Esqueceu sua Senha?</a>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
