@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (usuario.trim() !== "" && senha.trim() !== "") {
         alert("Login bem-sucedido! Redirecionando...");
 
-        window.location.href = "incial.html";
+        window.location.href = "inicial.html";
       } else {
         alert("Por favor, preencha o usuário e a senha.");
       }
