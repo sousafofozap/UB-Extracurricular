@@ -3,10 +3,11 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: "Nunito Sans", sans-serif;
 }
 
-/* CSS LOGIN PAGE*/
+/* --- CSS LOGIN PAGE --- */
 
 .contentLogin {
   height: 100vh;
@@ -14,6 +15,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 20px;
 }
 .contentLogin span {
   font-size: 27px;
@@ -35,9 +37,9 @@
   gap: 15px;
 }
 .login {
-  flex: 1;
-  height: 38px;
-  width: 248px;
+  flex-grow: 1;
+  height: 40px;
+  width: 100%;
   border: 1px solid #ccc;
   border-left: none;
   border-radius: 0 5px 5px 0;
@@ -47,16 +49,16 @@
 .inputBox {
   display: flex;
   align-items: center;
+  width: 300px;
   margin-bottom: 2px;
 }
 
 .iconeLogin {
   background-color: #900008;
+  padding: 10px;
   height: 20px;
-  align-items: center;
-  justify-content: center;
-  border: #900008 solid;
-  border-width: 10px;
+  width: 20px;
+  box-sizing: content-box;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
 }
@@ -70,11 +72,11 @@
   margin-top: 20px;
   margin-bottom: 10px;
   color: white;
+  cursor: pointer;
 }
 .acessar:hover {
-  background-color: lightgray;
+  background-color: #c9302c;
 }
-
 .botaoG {
   width: 300px;
   display: flex;
@@ -93,7 +95,6 @@
 .iconeG {
   height: 20px;
 }
-
 .linhaOu {
   width: 300px;
   margin: 10px auto;
@@ -116,84 +117,7 @@
   color: #580004;
 }
 
-/* CSS PAGES */
-
-.infoSuperiores {
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
-  align-items: center;
-  padding: 10px;
-  color: #776f6a;
-  font-size: 13px;
-}
-
-.infoSuperiores .ub {
-  justify-self: start;
-  text-align: left;
-  color: #0693cc;
-}
-
-.infoSuperiores .curso-info {
-  justify-self: center;
-  text-align: center;
-}
-
-.infoSuperiores .nomeRA {
-  justify-self: end;
-  text-align: right;
-}
-.cabecalho {
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
-  align-items: center;
-  padding: 10px 20px;
-  width: 100%;
-  box-sizing: border-box;
-  background-color: #900008;
-  border-bottom: 1px solid #ddd;
-}
-
-.logoUB {
-  display: block;
-  align-items: center;
-}
-.logoUB img {
-  width: 200px;
-  display: block;
-}
-.titulo-cabecalho {
-  margin: 0;
-  font-size: 1.5em;
-  color: white;
-}
-.menu {
-  justify-self: end;
-}
-
-.menu ul {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.menu li a {
-  display: block;
-  padding: 10px 15px;
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-  border-radius: 5px;
-  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-}
-
-.menu li a:hover {
-  background-color: #f0f0f0;
-  color: #900008;
-}
-
+/* --- ESTRUTURA GERAL DAS PÁGINAS --- */
 html {
   height: 100%;
 }
@@ -203,11 +127,11 @@ body {
   min-height: 100vh;
   margin: 0;
 }
-
 main {
   flex: 1;
+  width: 100%;
+  padding: 0 24px;
 }
-
 footer {
   background-color: #f8f8f8;
   border-top: 1px solid #ddd;
@@ -215,16 +139,77 @@ footer {
   text-align: center;
   padding: 20px;
   width: 100%;
-  box-sizing: border-box;
 }
-
 footer p {
   margin: 0;
   font-size: 14px;
 }
 
-/* CSS INDEX PAGE */
+/* --- CABEÇALHO --- */
+.infoSuperiores {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  padding: 10px 20px;
+  color: #776f6a;
+  font-size: 13px;
+}
+.infoSuperiores .ub {
+  justify-self: start;
+  text-align: left;
+  color: #0693cc;
+}
+.infoSuperiores .curso-info {
+  justify-self: center;
+  text-align: center;
+}
+.infoSuperiores .nomeRA {
+  justify-self: end;
+  text-align: right;
+}
+.cabecalho {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #900008;
+}
+.logoUB img {
+  width: 200px;
+  display: block;
+}
+.titulo-cabecalho {
+  text-align: center;
+  margin: 0;
+  font-size: 1.5em;
+  color: white;
+}
+.menu {
+  justify-self: end;
+}
+.menu ul {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.menu li a {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+.menu li a:hover {
+  background-color: #f0f0f0;
+  color: #900008;
+}
 
+/* --- PÁGINA INDEX --- */
 .boas-vindas {
   background-color: #f9f9f9;
   border: 1px solid #e0e0e0;
@@ -232,36 +217,29 @@ footer p {
   padding: 24px;
   margin: 24px 0;
 }
-
 .boas-vindas h2 {
   margin-top: 0;
   margin-bottom: 16px;
   font-size: 1.8em;
   color: #333;
 }
-
 .boas-vindas p {
   font-size: 1.1em;
   line-height: 1.6;
   color: #555;
   margin: 0 0 10px 0;
 }
-
 .boas-vindas strong {
   color: #0056b3;
   font-weight: 600;
 }
-
 .atividades {
   margin: 24px 0;
 }
-
 .atividades h2 {
-  margin-left: 20px;
   margin-top: 0;
   margin-bottom: 20px;
 }
-
 .filtroAtividades ul {
   display: flex;
   list-style: none;
@@ -269,7 +247,6 @@ footer p {
   margin: 0;
   border-bottom: 1px solid #e0e0e0;
 }
-
 .filtroAtividades li a {
   display: block;
   padding: 12px 18px;
@@ -279,12 +256,10 @@ footer p {
   border-bottom: 3px solid transparent;
   margin-bottom: -1px;
 }
-
 .filtroAtividades li.ativo a {
   color: #0056b3;
   border-bottom-color: #0056b3;
 }
-
 .atividades article {
   background-color: #fff;
   border: 1px solid #e0e0e0;
@@ -292,7 +267,6 @@ footer p {
   padding: 20px;
   margin-top: 20px;
 }
-
 .atividades article h3 {
   margin-top: 0;
   margin-bottom: 12px;
@@ -303,13 +277,11 @@ footer p {
   text-decoration: none;
   color: inherit;
 }
-
 .atividades article p {
   margin-bottom: 0;
   line-height: 1.5;
   color: #666;
 }
-
 .btn-ver-mais {
   display: inline-block;
   margin-top: 15px;
@@ -321,39 +293,33 @@ footer p {
   border-radius: 5px;
   transition: background-color 0.2s ease;
 }
-
 .btn-ver-mais:hover {
   background-color: #c9302c;
 }
 
-/* CSS ATIVIDADES PAGE */
-
+/* --- PÁGINA ATIVIDADES --- */
 main .titulo-atividade {
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 40px;
   max-width: 1200px;
   margin: 30px auto;
-  padding: 0 24px;
+  padding: 0;
 }
-
 main .titulo-atividade header {
   grid-column: 1 / -1;
   margin-bottom: 20px;
   padding-bottom: 20px;
   border-bottom: 1px solid #e0e0e0;
 }
-
 main .titulo-atividade header h2 {
   margin: 0;
   font-size: 2.2em;
   color: #333;
 }
-
 main .titulo-atividade figure {
   margin: 0;
 }
-
 main .titulo-atividade figure img {
   width: 100%;
   height: auto;
@@ -361,39 +327,33 @@ main .titulo-atividade figure img {
   border-radius: 8px;
   border: 1px solid #e0e0e0;
 }
-
 main .titulo-atividade figure figcaption {
   margin-top: 8px;
   font-size: 0.9em;
   color: #888;
   text-align: center;
 }
-
 main .titulo-atividade .detalhes h3 {
   margin-top: 0;
   font-size: 1.5em;
   color: #444;
 }
-
 main .titulo-atividade .detalhes p {
   font-size: 1.1em;
   line-height: 1.7;
   color: #555;
   margin-bottom: 12px;
 }
-
 main .titulo-atividade .detalhes p strong {
   color: #333;
   min-width: 120px;
   display: inline-block;
 }
-
 .form-inscrever {
   margin-top: 20px;
   padding-top: 20px;
   border-top: 1px solid #e0e0e0;
 }
-
 .form-inscrever button {
   display: inline-block;
   background-color: #900008;
@@ -409,44 +369,38 @@ main .titulo-atividade .detalhes p strong {
   transition: background-color 0.3s ease;
   width: 100%;
 }
-
 .form-inscrever button:hover {
   background-color: #c9302c;
 }
 
-/* CSS QR CODE PAGE */
-
+/* --- PÁGINA QR CODE --- */
 .main-qrcode {
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 40px;
   max-width: 1200px;
   margin: 30px auto;
-  padding: 0 24px;
+  padding: 0;
   align-items: start;
 }
-
 .selecionar-atividade {
   background-color: #f9f9f9;
   border: 1px solid #e0e0e0;
   border-radius: 8px;
   padding: 24px;
 }
-
 .selecionar-atividade h2 {
   margin-top: 0;
   margin-bottom: 24px;
   font-size: 1.5em;
   color: #333;
 }
-
 .selecionar-atividade form label {
   display: block;
   font-weight: bold;
   margin-bottom: 8px;
   color: #555;
 }
-
 .selecionar-atividade form select {
   width: 100%;
   padding: 12px;
@@ -455,7 +409,6 @@ main .titulo-atividade .detalhes p strong {
   border-radius: 5px;
   margin-bottom: 24px;
 }
-
 .selecionar-atividade form button {
   padding: 14px;
   font-size: 1.1em;
@@ -468,20 +421,16 @@ main .titulo-atividade .detalhes p strong {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-
 .selecionar-atividade form button:hover {
   background-color: #c9302c;
 }
-
 .qrcode {
   text-align: center;
 }
-
 .qrcode h2 {
   font-size: 1.5em;
   color: #333;
 }
-
 .qrcode figure {
   margin: 20px 0;
   padding: 15px;
@@ -489,25 +438,21 @@ main .titulo-atividade .detalhes p strong {
   border-radius: 8px;
   background-color: #fff;
 }
-
 .qrcode figure img {
   max-width: 100%;
   height: auto;
   display: block;
 }
-
 .qrcode figcaption {
   margin-top: 10px;
   font-size: 0.9em;
   color: #888;
 }
-
 .qrcode .acoes {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
-
 .qrcode .acoes button {
   width: 100%;
   padding: 14px;
@@ -520,22 +465,22 @@ main .titulo-atividade .detalhes p strong {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-
 .qrcode .acoes button:hover {
   background-color: #e0e0e0;
 }
 
-/* CSS PERFIL PAGE */
-
+/* --- PÁGINA PERFIL --- */
 .perfil-container {
   max-width: 900px;
   margin: 30px auto;
+  padding: 0;
+}
+.perfil-card {
   padding: 24px;
   background-color: #f9f9f9;
   border: 1px solid #e0e0e0;
   border-radius: 8px;
 }
-
 .perfil-header {
   display: flex;
   align-items: flex-start;
@@ -544,11 +489,9 @@ main .titulo-atividade .detalhes p strong {
   padding-bottom: 24px;
   margin-bottom: 24px;
 }
-
 .perfil-header h2 {
   display: none;
 }
-
 .perfil-foto img {
   width: 150px;
   height: 150px;
@@ -557,36 +500,30 @@ main .titulo-atividade .detalhes p strong {
   border: 3px solid #fff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-
 .perfil-info h3 {
   margin-top: 0;
   margin-bottom: 4px;
   font-size: 2em;
   color: #333;
 }
-
 .perfil-info .perfil-curso {
   margin-top: 0;
   margin-bottom: 20px;
   font-size: 1.2em;
   color: #666;
 }
-
 .perfil-info .info-adicional p {
   font-size: 1.1em;
   color: #555;
   margin-bottom: 8px;
 }
-
 .perfil-info .info-adicional p strong {
   display: inline-block;
   min-width: 150px;
 }
-
 .perfil-acoes {
-  text-align: right;
+  text-align: center;
 }
-
 .perfil-acoes button {
   background-color: #900008;
   color: #fff;
@@ -598,7 +535,114 @@ main .titulo-atividade .detalhes p strong {
   cursor: pointer;
   transition: background-color 0.2s ease;
 }
-
 .perfil-acoes button:hover {
   background-color: #c9302c;
+}
+
+/* --- Botão Hambúrguer --- */
+.menu-hamburguer {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 24px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 1001;
+}
+.hamburguer-linha {
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  border-radius: 10px;
+  transition: all 0.3s linear;
+}
+
+@media (max-width: 768px) {
+  main {
+    padding: 0 15px;
+  }
+
+  .infoSuperiores {
+    display: none;
+  }
+
+  .cabecalho {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .titulo-cabecalho {
+    display: none;
+  }
+
+  .menu-hamburguer {
+    display: flex;
+  }
+
+  .menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 260px;
+    background-color: #8b0000;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-top: 80px;
+
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .menu.aberto {
+    transform: translateX(0);
+  }
+
+  .menu ul {
+    flex-direction: column;
+    width: 100%;
+    gap: 0;
+  }
+
+  .menu li {
+    width: 100%;
+    text-align: left;
+  }
+
+  .menu li a {
+    padding: 18px 30px;
+    width: 100%;
+    display: block;
+    color: #ffffff;
+    font-size: 1.2em;
+    font-weight: 500;
+    border-radius: 0;
+  }
+
+  .menu li a:hover {
+    background-color: #a52a2a;
+  }
+
+  main .titulo-atividade,
+  .main-qrcode,
+  .perfil-header {
+    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  main footer {
+    grid-column: auto;
+  }
+
+  .perfil-foto {
+    margin: 0 auto;
+  }
 }
